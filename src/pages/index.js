@@ -1,0 +1,10 @@
+// Export all page components for easier imports
+export { default as HomePage } from './HomePage';
+export { default as AboutPage } from './AboutPage';
+export { default as ServicesPage } from './ServicesPage';
+export { default as TreatmentsPage } from './TreatmentsPage';
+export { default as DoctorsPage } from './DoctorsPage';
+export { default as PartnersPage } from './PartnersPage';
+export { default as TestimonialsPage } from './TestimonialsPage';
+export { default as BlogPage } from './BlogPage';
+export { default as ContactPage } from './ContactPage';

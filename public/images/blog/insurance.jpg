@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F39C12;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D35400;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#grad1)" />
+  
+  <!-- Shield Icon -->
+  <path d="M400,100 L250,150 C250,300 300,350 400,400 C500,350 550,300 550,150 Z" fill="white" opacity="0.9" />
+  <path d="M400,130 L280,170 C280,290 320,330 400,370 C480,330 520,290 520,170 Z" fill="#D35400" opacity="0.7" />
+  
+  <!-- Umbrella Icon -->
+  <path d="M400,150 C300,150 250,200 200,250 L600,250 C550,200 500,150 400,150 Z" fill="white" />
+  <rect x="390" y="250" width="20" height="100" fill="white" />
+  <path d="M390,350 Q400,370 410,350" fill="none" stroke="white" stroke-width="5" />
+  
+  <!-- Document Icon -->
+  <rect x="600" y="150" width="80" height="100" fill="white" rx="5" ry="5" />
+  <line x1="620" y1="170" x2="660" y2="170" stroke="#D35400" stroke-width="2" />
+  <line x1="620" y1="190" x2="660" y2="190" stroke="#D35400" stroke-width="2" />
+  <line x1="620" y1="210" x2="660" y2="210" stroke="#D35400" stroke-width="2" />
+  <line x1="620" y1="230" x2="640" y2="230" stroke="#D35400" stroke-width="2" />
+  
+  <!-- Airplane Icon -->
+  <path d="M150,200 L180,180 L250,200 L180,220 L150,200 L200,200 Z" fill="white" />
+  <circle cx="180" cy="200" r="5" fill="#D35400" />
+  
+  <!-- Medical Cross -->
+  <rect x="190" y="300" width="20" height="50" fill="white" />
+  <rect x="175" y="315" width="50" height="20" fill="white" />
+  
+  <!-- Text -->
+  <text x="400" y="430" font-family="Arial" font-size="24" fill="white" text-anchor="middle">Medical Tourism Insurance</text>
+  <text x="400" y="460" font-family="Arial" font-size="16" fill="white" text-anchor="middle">Protecting Your Health Journey</text>
+</svg>
