@@ -64,3 +64,12 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+/* Add to your index.css */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* For modern browsers, consider using srcset */

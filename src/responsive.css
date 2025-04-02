@@ -1,0 +1,168 @@
+/* Responsive styles for Medical Tourism website */
+
+/* Base mobile-first styles */
+:root {
+  --container-padding: 1rem;
+}
+
+/* Small devices (phones, up to 576px) */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2rem !important;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.5rem !important;
+  }
+  
+  h3 {
+    font-size: 1.25rem !important;
+  }
+  
+  /* Adjust container padding */
+  .container {
+    padding-left: var(--container-padding) !important;
+    padding-right: var(--container-padding) !important;
+  }
+  
+  /* Make buttons more tappable on mobile */
+  button, .btn, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Blog posts grid adjustment */
+  [style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+  }
+  
+  /* Adjust spacing */
+  [style*="padding"] {
+    padding: 1rem !important;
+  }
+  
+  /* Ensure images are responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Medium devices (tablets, 577px to 768px) */
+@media (min-width: 577px) and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  /* Blog posts grid adjustment for tablets */
+  [style*="grid-template-columns"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+/* Large devices (desktops, 769px to 992px) */
+@media (min-width: 769px) and (max-width: 992px) {
+  /* Adjustments for desktop sizes if needed */
+}
+
+/* Utility classes for responsive layouts */
+.hide-on-mobile {
+  display: none !important;
+}
+
+@media (min-width: 577px) {
+  .hide-on-mobile {
+    display: initial !important;
+  }
+  
+  .show-on-mobile-only {
+    display: none !important;
+  }
+}
+
+/* Touch-friendly adjustments */
+@media (hover: none) {
+  /* Increase tap target sizes */
+  a, button, .btn, [role="button"] {
+    padding: 0.8rem !important;
+  }
+}
+
+/* Add these rules to the end of your responsive.css file */
+
+/* Improve touch interactions */
+@media (pointer: coarse) {
+  /* Increase spacing between interactive elements */
+  nav a, button, .btn, [role="button"] {
+    margin: 0.5rem 0;
+  }
+  
+  /* Ensure form elements are easily tappable */
+  input, select, textarea {
+    min-height: 44px;
+    font-size: 16px; /* Prevents iOS zoom on focus */
+  }
+  
+  /* Prevent text from being too small */
+  body {
+    font-size: 16px;
+  }
+}
+
+/* Fix iOS-specific issues */
+@supports (-webkit-touch-callout: none) {
+  /* Fix for iOS 100vh issue */
+  .full-height {
+    height: -webkit-fill-available;
+  }
+}
+
+/* Improve responsive tables */
+@media (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  
+  /* Stack form elements */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  form input, form select, form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  /* Improve spacing for stacked elements */
+  .row, .flex {
+    flex-direction: column;
+  }
+  
+  /* Fix for fixed position elements on iOS */
+  .fixed-element {
+    position: fixed;
+    -webkit-transform: translateZ(0);
+  }
+}
+
+/* Improve print styles */
+@media print {
+  header, footer, nav, .no-print {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+    color: #000;
+    background: #fff;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,156 @@
+/* Mobile-specific component styles for Medical Tourism website */
+
+/* Header & Navbar mobile styles */
+@media (max-width: 576px) {
+  /* Header adjustments */
+  header {
+    padding: 0.5rem 0;
+  }
+  
+  /* Navbar mobile styling */
+  nav {
+    flex-direction: column;
+  }
+  
+  nav .logo {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Mobile menu styles */
+  .mobile-menu-button {
+    display: block;
+  }
+  
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  
+  .nav-links.open {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Hero component mobile styles */
+@media (max-width: 576px) {
+  .hero-content {
+    padding: 2rem 1rem;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero-buttons button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Featured Treatments mobile styles */
+@media (max-width: 576px) {
+  .treatment-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .treatment-card {
+    padding: 1rem;
+  }
+}
+
+/* Doctor Cards mobile styles */
+@media (max-width: 576px) {
+  .doctor-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .doctor-card {
+    flex-direction: column;
+  }
+  
+  .doctor-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Testimonials mobile styles */
+@media (max-width: 576px) {
+  .testimonial-slider {
+    padding: 0 1rem;
+  }
+  
+  .testimonial-card {
+    padding: 1rem;
+  }
+}
+
+/* Footer mobile styles */
+@media (max-width: 576px) {
+  footer {
+    text-align: center;
+  }
+  
+  .footer-columns {
+    flex-direction: column;
+  }
+  
+  .footer-column {
+    margin-bottom: 1.5rem;
+    width: 100%;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+  .treatment-cards,
+  .doctor-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-columns {
+    flex-wrap: wrap;
+  }
+  
+  .footer-column {
+    width: 50%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Dropdown menu styles */
+@media (min-width: 769px) {
+  .dropdown-parent:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .dropdown-menu {
+    position: static;
+    box-shadow: none;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .dropdown-indicator {
+    margin-left: 0.5rem;
+  }
+}
